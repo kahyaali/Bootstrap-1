@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <p>Tür:<span id="height"></span></p>
+        <p>Genişlik:<span id="width"></span></p>
+    </div>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı-->
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Java Script</li>
+            <li class="list-group-item">Bootstrap</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group list-group-horizontal"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Java Script</li>
+            <li class="list-group-item">Bootstrap</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group list-group-horizontal-md"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Java Script</li>
+            <li class="list-group-item">Bootstrap</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <li class="list-group-item active">HTML</li> <!--active özelliği verdik seçili geliyor-->
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Java Script</li>
+            <li class="list-group-item disabled">Bootstrap</li> <!--disabled özelliği verdik-->
+        </ul>
+    </div>
+
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <a href="#" class="list-group-item list-group-item-action">HTML</a> <!--list-group-item-action yazınca hover özelliği kazanıyor-->
+            <a href="#" class="list-group-item list-group-item-action">CSS</a>
+            <a href="#" class="list-group-item">Java Script</a>
+            <a href="#" class="list-group-item">Bootstrap</a> 
+        </ul>
+    </div>
+
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">HTML</a> <!--list-group-item-action yazınca hover özelliği kazanıyor arka plan rengi verdik-->
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">CSS</a> <!--list-group-item-danger arka plan rengi verdik-->
+            <a href="#" class="list-group-item list-group-item-primary">Java Script</a>
+            <a href="#" class="list-group-item list-group-item-info">Bootstrap</a> 
+        </ul>
+    </div>
+    <hr>
+    <div class="container border border-dark p-4"> 
+        <ul class="list-group list-group-flush"> <!--list-group-flush deyince en üstteki ve en alttaki çizgiyi kaldırıyor aralardaki çizgiler kalıyor-->
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Java Script</li>
+            <li class="list-group-item">Bootstrap</li>
+        </ul>
+    </div>
+
+    <hr>
+    <div class="container border border-dark p-4"> <!--padding değerini buna verdik içindeki elemanlar iç boşluk kullansın diye-->
+        <ul class="list-group"> <!--list grup olduğu tanımı yapıldı li elementlerinede list grup itemları olduğu tanımlandı yatay olarak tanımladık-->
+            <a href="#" class="badge badge-danger list-group-item list-group-item-action">HTML</a> <!--badge yazınca üzerine gelince çıkıyor yazılar ve rengi değişiyor-->
+            <a href="#" class="badge badge-success list-group-item list-group-item-action">CSS</a>
+            <a href="#" class="badge badge-info list-group-item list-group-item-action">Java Script</a>
+            <a href="#" class="badge badge-primary list-group-item list-group-item-action">Bootstrap</a> 
+        </ul>
+    </div>
+</body>
+</html>
